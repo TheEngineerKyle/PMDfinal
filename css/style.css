@@ -36,16 +36,21 @@ a:hover,a:focus,a:active {
 	outline:none!important;
 }
 p {
-	color:#8c9398;
 	word-spacing:1px;
-	line-height:25px;
-	font-size:14px;
+	color:#8c9398;
+	font-size: 16px;
+	font-weight:80;
+	line-height: 35px!important;
+	padding-top: 0.75rem;
 }
+
 h2 {
-	font-size:15px;
+	font-size:1.5em;
 	color:#353535!important;
-	font-weight:bold;
+	margin:0.83em 0;
 }
+
+
 h2::after {
 	content:" ";
 	border:solid 1px #CCCCCC;
@@ -54,9 +59,10 @@ h2::after {
 	margin:20px auto;
 }
 h6 {
-	font-size:15px;
-	color:#8c8c8c;
-	font-weight:bold;
+	font-size: 20px;
+	padding-top: 0.25rem;
+	margin:1em 0;
+	color:#7a7a7a;
 }
 h6::after {
 	content:" ";
@@ -113,10 +119,7 @@ h1 {
 	margin:0.67em 0;
 	color:#353535;
 }
-h2 {
-	font-size:1.5em;
-	margin:0.83em 0;
-}
+
 h3 {
 	font-size:1.17em;
 	margin:1em 0;
@@ -129,16 +132,11 @@ h5 {
 	font-size:0.83em;
 	margin:1.67em 0;
 }
-h6 {
-	font-size: 18px;
-	margin:2.33em 0;
-}
+
 abbr[title] {
 	border-bottom:1px dotted;
 }
-b,strong {
-	font-weight:bold;
-}
+
 blockquote {
 	margin:0em 55px;
 	border-left:4px solid #CCCCCC;
@@ -188,11 +186,6 @@ sub {
 
 /* ====== p font size =========================================================== */
 
-p {
-	font-size: 18px;
-	font-weight:100;
-	line-height: 28px!important;
-}
 
 
 /* ==========================================================================Lists========================================================================== */
@@ -215,15 +208,6 @@ img {
 	-ms-interpolation-mode:bicubic;
 	padding: 10px 0 10px 0;
 }
-
-.blog>img {
-            border: 8px solid rgba(255, 0, 0, 0.553);
-			border-radius: 5px;
-            padding: 4px;
-            background: transparent;
-            background-clip: border-box;
-            -ms-interpolation-mode:bicubic;
-            }
 
 svg:not(:root) {
 	overflow: hidden;
@@ -403,11 +387,11 @@ table {
 .menu {
 	height:100%;
 	overflow:hidden;
-	font-size:0.75em;
+	font-size:25px;
 }
 .icon-list {
 	float:right;
-	padding:2.5em 2em 0 6em;
+	padding:1.5em 2em 0 6em;
 }
 .icon-list a {
 	opacity:0;
@@ -434,12 +418,12 @@ table {
 }
 .show-menu .menu-wrap {
 	width:100%;
-	height:125px;
+	height:100px;
 	-webkit-transform:translate3d(0,0,0);
 	transform:translate3d(0,0,0);
 	-webkit-transition-delay:0s;
 	transition-delay:0s;
-	border-bottom: 1px solid #E04343;
+	border-bottom: 1px solid #353535;
 }
 .show-menu .icon-list a {
 	opacity:1;
@@ -581,15 +565,20 @@ table {
 
 h1.arrow {
 	font-size: 25px;
-	font-weight: 600;
+	font-weight: 550;
 	color:#353535;
 	letter-spacing: 1px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
 }
+
+
+
 h1.arrow span {
     color: #E04343;
 }
+
+
 /* ==========================================================================About========================================================================== */
 .about-image {
 	height:550px;
@@ -1052,6 +1041,7 @@ footer {
 }
 footer p {
 	color: #808080;
+	font-size: 14px;
 }
 /* ==========================================================================FlexSlider Custom CSS========================================================================== */
 #servicesSlider {
@@ -1263,7 +1253,7 @@ p {
 	}
 
 	.show-menu .menu-wrap {
-		height: 100%;
+		height: 60%;
 	}
 }
 
