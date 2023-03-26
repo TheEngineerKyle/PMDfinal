@@ -213,7 +213,18 @@ nav ul,nav ol {
 img {
 	border:0;
 	-ms-interpolation-mode:bicubic;
+	padding: 10px 0 10px 0;
 }
+
+.blog>img {
+            border: 8px solid rgba(255, 0, 0, 0.553);
+			border-radius: 5px;
+            padding: 4px;
+            background: transparent;
+            background-clip: border-box;
+            -ms-interpolation-mode:bicubic;
+            }
+
 svg:not(:root) {
 	overflow: hidden;
 }
@@ -560,16 +571,22 @@ table {
 }
 /* ==========================================================================Intro========================================================================== */
 .intro p {
-	margin:50px 0 0;
+	margin:20px;
+	padding: 10px 80px 10px 80px;
 }
+
+.blog p {
+	margin:20px;
+	padding: 10px 50px 10px 50px;
+}
+
 h1.arrow {
-	font-size: 16px;
+	font-size: 25px;
+	font-weight: 600;
 	color:#353535;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
-	font-weight: bold;
-	line-height: px;
 }
 h1.arrow span {
     color: #E04343;
@@ -581,11 +598,6 @@ h1.arrow span {
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	background-size:cover;
-
-}
-
-.aboutspacer {
-	line-height: 2.5;
 }
 
 
@@ -739,7 +751,7 @@ i.respons {
 img.grayscale {
 	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 	/* Firefox 3.5+,IE10 */ filter:gray;
-	/* IE6-9 */ -webkit-filter:grayscale(100%);
+	/* IE6-9 */ -webkit-filter:grayscale(15%);
 	/* Chrome 19+& Safari 6+*/ -webkit-transition:all .6s ease;
 	/* Fade to color for Chrome and Safari */ -webkit-backface-visibility:hidden;
 	/* Fix for transition flickering */
@@ -881,7 +893,7 @@ img.grayscale:hover {
 }
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
-	padding:70px 0;
+	padding: 90px 0 90px 0;
 }
 .outline-btn {
 	display:inline-block;
@@ -1049,6 +1061,7 @@ footer p {
 ul.slides li {
 	margin-bottom:20px;
 }
+
 .features-slider {
 	position:relative;
 	padding:11% 100px 10% 100px;
@@ -1238,7 +1251,6 @@ p {
 
 	.btn-send {
 	    float: none;
-	
 	    margin-bottom: 80px;
 	}
 	.effects .img {
