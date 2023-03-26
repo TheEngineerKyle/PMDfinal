@@ -966,7 +966,7 @@ ul.social-buttons li:last-child {
 	background: #FFE800;
 }
 .contact-details {
-	margin:70px 0;
+	margin:70px 0 70px 0;
 }
 .contact-details h2 {
 	font-size:20px;
@@ -981,18 +981,16 @@ ul.social-buttons li:last-child {
 .contact-wrap {
 	position:relative;
 }
-#googlemaps {
-	width:100%;
-	height:300px;
-	left:15px;
-	bottom:25px;
-}
+
 .contact {
 	margin-top:-20px!important;
 }
 .contact label {
 	float:left;
 }
+
+
+/* THE TEXT INSIDE THE  */
 .contact .form-control {
 	margin-bottom:20px;
 	border:1px solid #cbcbcb;
@@ -1003,24 +1001,36 @@ ul.social-buttons li:last-child {
 }
 
 /* Inputs styles */
+
+
+/* FORM BOX STYLE */
 .contact .form-control {
-	border-radius:0!important;
-	;
+	border-radius:10px!important;
 	-webkit-box-shadow:none;
 	box-shadow:none;
+	border:1px solid #526f93;
 }
+
+
+/* WHEN YOU CLICKED IN TO TYPE */
 .contact .form-control:focus {
 	-webkit-box-shadow:none;
 	box-shadow:none;
-	border:1px solid #B0B0B0;
+	border:3px solid #0092fa;
 }
 
+
+
+/* THE SEND BUTTOM color and font */
 .btn-send{
-	background:#E04343;
+	background:#008a86;
 	color: white;
 	transition: all 0.4s;
-	border-radius: 0;
-	float: right;
+	border-radius: 3px;
+	float: center;
+	width: 300px;
+	height: 50px;
+	font-size: 17px;
 }
 
 .btn-send:hover{
