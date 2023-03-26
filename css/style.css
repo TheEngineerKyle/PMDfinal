@@ -1152,15 +1152,22 @@ button,button:focus,button:hover,button:active {
 .music-container {
 	background: purple;
     display: flex;
-    justify-content:center;
+	flex-wrap: wrap;
+ 	text-align: center;
+	justify-content: center;
 }
 
-  
+
 .music-container>.playbox {
-    flex: 1;
-   
+	width: 50x;
+  	margin: 100px;
  }
 
+
+.music-container>.songs {
+	width: 300px;
+	margin: 10px;
+ }
 
 
 
@@ -1170,7 +1177,6 @@ button,button:focus,button:hover,button:active {
     background-color: #222427;
     border-radius: 50%;
     margin: 2rem auto;
-    display: flex;
     border: 3px solid #37b0d8;
     border-top: 3px solid #0254ec;
    
@@ -1183,8 +1189,6 @@ button,button:focus,button:hover,button:active {
     border: 3px solid #282529;
     border-top: 3px solid #66bfe9;
     align-self: center;
-    display: flex;
-    margin: auto;
     
 }
 .circle2 .fluid-img{
@@ -1192,7 +1196,6 @@ button,button:focus,button:hover,button:active {
     max-width: 50px;
     height: auto;
     align-self: center;
-    margin: auto;
 }
 #song-name	{
     color: #15253a;
@@ -1207,10 +1210,9 @@ button,button:focus,button:hover,button:active {
     animation: clockwise 6s infinite linear;
 }
 .media-btn {
+	boud
     width: 100%;
     max-width: 50px;
-    height: auto;
-    margin: auto;
     cursor: pointer;
     margin: 1rem;
 }

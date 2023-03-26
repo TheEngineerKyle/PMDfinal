@@ -45,7 +45,7 @@ const songList = [
     {
         name: "Summer",
         source: "./assets/music/song5.mp3",
-        cover: "./assets/music/ball.png"
+        cover: "./assets/music/..."
     }
 ];
 // helper function
