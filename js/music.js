@@ -25,27 +25,27 @@ const songList = [
     {
         name: "As Time Goes By",
         source: "./assets/music/song1.mp3",
-        cover: "./assets/music/ball.png"
+        cover: "./assets/music/note.png"
     },
     {
         name: "Chopin Nocturne",
         source: "./assets/music/song2.mp3",
-        cover: "./assets/music/ball.png"
+        cover: "./assets/music/note.png"
     },
     {
         name: "Embraceble",
         source: "./assets/music/song3.mp3",
-        cover: "./assets/music/ball.png"
+        cover: "./assets/music/note.png"
     },
     {
         name: "Memories",
         source: "./assets/music/song4.mp3",
-        cover: "./assets/music/ball.png"
+        cover: "./assets/music/note.png"
     },
     {
         name: "Summer",
         source: "./assets/music/song5.mp3",
-        cover: "./assets/music/..."
+        cover: "./assets/music/note.png"
     }
 ];
 // helper function
