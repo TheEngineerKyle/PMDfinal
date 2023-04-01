@@ -1152,53 +1152,14 @@ button,button:focus,button:hover,button:active {
 
 /* ============== MUSIC PLAYER========================================================================== */
 
-.listen{
+.listen {
 	background-color: #ffffff59;
 	display: flex;
 	flex-direction: row;
 	justify-content:center;
-	gap: 3rem;
+	flex-wrap: nowrap;
 }
  
-.listen h4, h5 {
-color: white;
-text-align: right;
-padding: 0;
-line-height: 20px;
-font-style: italic;
-font-size: 15px;
-}
-
-.listen h6 {
-	text-align:left;
-}
-
-.listen h6::after {
-	content:" ";
-	border:solid 1px #CCCCCC;
-	display:block;
-	width:65px;
-	margin:20px auto;
-}
-
-
-.controls {
-	display: flex;
-	min-width: 200px;
-	min-height: 100px;
-	align-items:center;
-	padding: 0 20px 0 20px;
-	margin: 0 10px 0 10px;;
-	
-}
-
-.dennis	{
-	align-self: center;
-}
-
-		
-
-
 .circle {
     width: 70px;
     height: 70px;
@@ -1209,11 +1170,34 @@ font-size: 15px;
     border: 5px solid #37b0d8;
     border-top: 5px solid #0254ec;
 	align-self: center;
+}
+
+.dennis	{
+	align-self: center;
+}
 
 
-	
+
+.controls {
+	display: flex;
+	min-width: 200px;
+	min-height: 100px;
+	align-items:center;
+	padding: 0 20px 0 20px;
+	margin: 0 10px 0 10px;;
+	align-self: center;
 	
 }
+
+.songs {
+	display: flex;
+	align-self: center;
+	width: 250px;
+	align-self: center;
+	align-items:center;
+}
+
+		
 
 
 .circle2 {
@@ -1239,12 +1223,12 @@ font-size: 15px;
 
 }
 #song-name{
+	text-align: center;
     color: #ffffff;
     font-weight: 400;
-	width: 200px;
 	padding: 0 15px 0 30px;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 18px;
 	
 }
 
@@ -1282,6 +1266,20 @@ font-size: 15px;
 
 @media (max-width: 900px) {
 
+
+		.controls{
+			min-width: 250px;
+			max-width: 300px;
+		}
+
+		
+
+		.songs {
+			display: flex;
+			width: 40%;
+		}
+		
+
 	.listen h6 {
 		text-align: center;
 	}
@@ -1297,7 +1295,7 @@ font-size: 15px;
 
     .listen {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 		justify-content:center;
 		align-items: center;
 		flex-wrap: wrap;
@@ -1313,6 +1311,8 @@ font-size: 15px;
 		margin: 0; /*important*/
 		border: 8px solid #c2ed26;
 		border-top: 8px solid #000000;
+		order: -1;
+		
 	}
 
 	.circle2 {
@@ -1324,6 +1324,7 @@ font-size: 15px;
     .controls {
 		display: flex;
 		gap:3rem;
+		order: -1;
     }
 
 			.songs {
@@ -1340,9 +1341,7 @@ font-size: 15px;
 
 
 @media (max-width: 500px) {
-    .listen {
-    }
-	
+
 
 	.controls {
 		display: flex;
